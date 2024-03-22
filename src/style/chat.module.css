@@ -1,0 +1,312 @@
+.navbar {
+    display: block;
+    height: 14vh;
+}
+
+.container_chat {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    z-index: 2;
+    height: 86vh;
+    background-color: rgb(241, 245, 249);
+    inset: 0px;
+    overflow: hidden;
+}
+
+.list_chats {
+    width: 40%;
+}
+
+.history_chat {
+    width: 60%;
+}
+
+.container_list_chats {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+}
+.container_list_chats-title {
+    padding: 1rem 2.2rem;
+    border-bottom-width: 1px;
+    background-color: rgb(246, 249, 251);
+}
+.list_chats-logo-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.container_list_chats-chats {
+    flex: 1 1 0%;
+    overflow: auto;
+    min-height: 100%;
+    padding: 1rem;
+    background-color: #fff;
+}
+.list_chats_ul {
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 8px 0px;
+    position: relative;
+}
+.list_chats_ul-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.title-chats {
+    opacity: 1;
+    transform: none;
+}
+.title-chats-p {
+    color: rgb(79, 70, 229);
+    line-height: 1.5;
+    padding: .6rem 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+.separator-chat {
+    border-bottom-width: 1px;
+}
+.chat_option-a {
+    text-decoration: none;
+    padding: 1.2rem 3.2rem;
+    min-height: 8rem;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    color: inherit;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    min-width: 0px;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 8px 16px;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.chat_option-icono {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+.chat_option-icono-div {
+    font-size: inherit;
+    color: rgb(107, 114, 128);
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+}
+.chat_option-icono-img {
+    display: block;
+    max-width: 100%;
+    text-indent: 10000px;
+    color: transparent;
+    object-fit: cover;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.chat_option-name {
+    padding: 0 1.6rem;
+    min-width: 1px;
+    flex: 1 1 auto;
+    margin: 6px 0;
+}
+.chat_option-name-span {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0px;
+    line-height: 1.5;
+    display: block;
+}
+.chat_option-name-p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
+    color: rgb(107, 114, 128);
+    display: block;
+}
+
+.chat_option-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.chat_option-date-p {
+    color: rgb(107, 114, 128);
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: .8rem;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.chat_option-notification {
+    color: rgb(255, 255, 255);
+    background-color: rgb(79, 70, 229);
+    display: flex;
+    height: 2rem;
+    min-width: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    text-align: center;font-size: 1rem;
+    font-weight: 500;
+}
+
+/* =======================chat===================== */
+.pageSimple-contentWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+    z-index: 9999;
+}
+.pageSimple-content{
+    align-items: flex-start;
+    min-height: 0px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    height: 100%;
+    max-width: 1570px;
+    width: 100%;
+    margin: 0px auto;
+}
+.pageSimple-header{
+    border-color: rgb(226, 232, 240);
+    background-color: rgb(246, 249, 251);
+    width: 100%;
+    border-bottom-width: 1px;
+}
+
+
+
+
+
+.pageSimple-body {
+    display: flex;
+    height: 100%;
+    min-height: 0px;
+    width: 100%;
+    flex: 1 1 auto;
+}
+.pageSimple-body-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+
+.pageSimple-body-form {
+    color: rgb(17, 24, 39);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    background-image: none;
+    background-color: rgb(246, 249, 251);
+    border-color: rgb(226, 232, 240);
+    position: absolute;
+}
+
+
+
+
+.historyChatBox {
+  height: 78.5vh;
+}
+/* =============== INPUT MESSAGE =========== */
+.messageBox {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(63, 63, 63);
+}
+.messageBox:focus-within {
+  border: 1px solid rgb(110, 110, 110);
+}
+
+.messageInput {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  color: black;
+}
+.messageInput:focus ~ .sendButton svg path,
+.messageInput:valid ~ .sendButton svg path {
+  fill: #3c3c3c;
+  stroke: white;
+}
+
+.sendButton {
+  width: 30px;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sendButton svg {
+  height: 18px;
+  transition: all 0.3s;
+}
+.sendButton svg path {
+  transition: all 0.3s;
+}
+.sendButton:hover svg path {
+  fill: #3c3c3c;
+  stroke: white;
+}
